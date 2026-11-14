@@ -52,7 +52,7 @@ def main():
     parser = argparse.ArgumentParser(description="Tool lọc và copy ảnh tập dev")
     parser.add_argument("--csv", type=str, default="fixtures/t02_raw_qc/images.csv",
                         help="Đường dẫn tới file images.csv")
-    parser.add_argument("--out", type=str, default="out/dev_images", help="Thư mục chứa ảnh dev đầu ra")
+    parser.add_argument("--out", type=str, default="outimages/dev_images", help="Thư mục chứa ảnh dev đầu ra")
     args = parser.parse_args()
 
     extract_dev_images(args.csv, args.out)
